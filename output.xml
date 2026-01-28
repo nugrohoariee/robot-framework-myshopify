@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.9 on win32)" generated="2026-01-28T15:37:03.570525" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.9 on win32)" generated="2026-01-28T16:11:59.060524" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\RND\ROBOT\tests">
 <suite id="s1-s1" name="TC01-SignUp" source="D:\RND\ROBOT\tests\TC01-SignUp.robot">
 <test id="s1-s1-t1" name="TC01001 - User dapat melakukan daftar akun" line="12">
 <kw name="Visit Page" owner="Common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-28T15:37:04.175810" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\RND\\ROBOT\\browser\\traces\\temp\\bdc76378-107d-42b8-8266-f5cd1a64c08d"}</msg>
-<msg time="2026-01-28T15:37:04.413764" level="INFO">Starting Browser process D:\RND\ROBOT\robot\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:55788</msg>
-<msg time="2026-01-28T15:37:06.119537" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\RND\\ROBOT\\browser\\traces\\temp\\bdc76378-107d-42b8-8266-f5cd1a64c08d"}</msg>
+<msg time="2026-01-28T16:11:59.614292" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\RND\\ROBOT\\browser\\traces\\temp\\71508bd3-2054-4fdc-b2cf-6d6efe605fb5"}</msg>
+<msg time="2026-01-28T16:11:59.812850" level="INFO">Starting Browser process D:\RND\ROBOT\robot\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53618</msg>
+<msg time="2026-01-28T16:12:01.534753" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\RND\\ROBOT\\browser\\traces\\temp\\71508bd3-2054-4fdc-b2cf-6d6efe605fb5"}</msg>
 <arg>${browser}</arg>
 <arg>headless=False</arg>
 <arg>args=["--start-maximized"]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:04.174474" elapsed="1.945375"/>
+<status status="PASS" start="2026-01-28T16:11:59.613075" elapsed="1.922063"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-28T15:37:06.122989" level="INFO">{
+<msg time="2026-01-28T16:12:01.537486" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -28,135 +28,135 @@
   "serviceWorkers": "allow",
   "viewport": null
 }</msg>
-<msg time="2026-01-28T15:37:06.143484" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-28T15:37:06.143627" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<msg time="2026-01-28T16:12:01.554468" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-28T16:12:01.554556" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
 <arg>viewport=${None}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:06.120158" elapsed="0.023598"/>
+<status status="PASS" start="2026-01-28T16:12:01.535573" elapsed="0.019073"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-28T15:37:07.825610" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
+<msg time="2026-01-28T16:12:07.969680" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
 <arg>${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-28T15:37:06.144063" elapsed="1.682113"/>
+<status status="PASS" start="2026-01-28T16:12:01.554842" elapsed="6.415436"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:08.098945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:08.234133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:07.826735" elapsed="0.272508"/>
+<status status="PASS" start="2026-01-28T16:12:07.970813" elapsed="0.263714"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:04.172835" elapsed="3.926641"/>
+<status status="PASS" start="2026-01-28T16:11:59.611613" elapsed="8.623199"/>
 </kw>
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2026-01-28T15:37:08.101836" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
+<msg time="2026-01-28T16:12:08.237559" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
 <var>${data}</var>
 <arg>D:\\RND\\ROBOT\\tests/../Resources/DataFiles/users.json</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.100207" elapsed="0.001716"/>
+<status status="PASS" start="2026-01-28T16:12:08.235677" elapsed="0.001961"/>
 </kw>
 <kw name="Klik Tombol SIgnUp" owner="SignUpPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:08.104255" level="INFO">Clicks the element 'css=a:has-text("Sign up")'.</msg>
+<msg time="2026-01-28T16:12:08.240298" level="INFO">Clicks the element 'css=a:has-text("Sign up")'.</msg>
 <arg>${BTN_SIGN_UP}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.103270" elapsed="0.463349"/>
+<status status="PASS" start="2026-01-28T16:12:08.239216" elapsed="0.561164"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:08.102610" elapsed="0.464291"/>
+<status status="PASS" start="2026-01-28T16:12:08.238491" elapsed="0.562200"/>
 </kw>
 <kw name="Isi Form Pendaftaran" owner="SignUpPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:08.570951" level="INFO">Fills the text 'Arie' in the given field.</msg>
+<msg time="2026-01-28T16:12:08.805512" level="INFO">Fills the text 'Arie' in the given field.</msg>
 <arg>${FIELD_FIRST_NAME}</arg>
 <arg>${first_name}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.569995" elapsed="0.134897"/>
+<status status="PASS" start="2026-01-28T16:12:08.804494" elapsed="0.147763"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:08.706460" level="INFO">Fills the text 'Nugroho' in the given field.</msg>
+<msg time="2026-01-28T16:12:08.953668" level="INFO">Fills the text 'Nugroho' in the given field.</msg>
 <arg>${FIELD_LAST_NAME}</arg>
 <arg>${last_name}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.705306" elapsed="0.031178"/>
+<status status="PASS" start="2026-01-28T16:12:08.952646" elapsed="0.032502"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:08.738638" level="INFO">Fills the text 'arie@nugrohoarie.cloud' in the given field.</msg>
+<msg time="2026-01-28T16:12:08.987168" level="INFO">Fills the text 'arie@nugrohoarie.cloud' in the given field.</msg>
 <arg>${FIELD_ID}</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.737248" elapsed="0.026030"/>
+<status status="PASS" start="2026-01-28T16:12:08.985691" elapsed="0.023236"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:08.764716" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
+<msg time="2026-01-28T16:12:09.010519" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
 <arg>${FIELD_PASSWORD}</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.763646" elapsed="0.026112"/>
+<status status="PASS" start="2026-01-28T16:12:09.009345" elapsed="0.018731"/>
 </kw>
 <arg>${data['user_pendaftaran']['first_name']}</arg>
 <arg>${data['user_pendaftaran']['last_name']}</arg>
 <arg>${data['user_pendaftaran']['email']}</arg>
 <arg>${data['user_pendaftaran']['password']}</arg>
-<status status="PASS" start="2026-01-28T15:37:08.567617" elapsed="0.222507"/>
+<status status="PASS" start="2026-01-28T16:12:08.801685" elapsed="0.226676"/>
 </kw>
 <kw name="Klik Tombol Create Account" owner="SignUpPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:08.793721" level="INFO">Clicks the element 'xpath=//form/div[6]/input'.</msg>
+<msg time="2026-01-28T16:12:09.030963" level="INFO">Clicks the element 'xpath=//form/div[6]/input'.</msg>
 <arg>${BTN_CREATE}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.792378" elapsed="0.053527"/>
+<status status="PASS" start="2026-01-28T16:12:09.029877" elapsed="0.060248"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:08.791205" elapsed="0.055026"/>
+<status status="PASS" start="2026-01-28T16:12:09.029047" elapsed="0.061474"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:09.002729" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:09.242439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:08.847022" elapsed="0.156022"/>
+<status status="PASS" start="2026-01-28T16:12:09.091477" elapsed="0.151324"/>
 </kw>
-<msg time="2026-01-28T15:37:09.073652" level="INFO">Switching context to context=7bafe44e-2cd8-4158-9dc9-aeb2e2199f88 in CURRENT</msg>
-<msg time="2026-01-28T15:37:09.087437" level="INFO">Successfully changed active context: context=7bafe44e-2cd8-4158-9dc9-aeb2e2199f88</msg>
-<msg time="2026-01-28T15:37:09.130001" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-28T15:37:04.171070" elapsed="4.835224"/>
+<msg time="2026-01-28T16:12:09.294962" level="INFO">Switching context to context=d0791af3-aa6a-4bb3-ad20-45135786b902 in CURRENT</msg>
+<msg time="2026-01-28T16:12:09.312268" level="INFO">Successfully changed active context: context=d0791af3-aa6a-4bb3-ad20-45135786b902</msg>
+<msg time="2026-01-28T16:12:09.353981" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-28T16:11:59.610144" elapsed="9.633738"/>
 </test>
 <doc>*Skenario Sign Up*
 Test ini bertujuan untuk memastikan user baru dapat mendaftar
 menggunakan email yang valid</doc>
-<status status="PASS" start="2026-01-28T15:37:03.624065" elapsed="5.508431"/>
+<status status="PASS" start="2026-01-28T16:11:59.102918" elapsed="10.252490"/>
 </suite>
 <suite id="s1-s2" name="TC02-PembelianProduk" source="D:\RND\ROBOT\tests\TC02-PembelianProduk.robot">
 <test id="s1-s2-t1" name="TC02001 - User dapat melakukan add to cart dan pembayaran" line="10">
 <kw name="Visit Page" owner="Common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-28T15:37:09.159881" level="INFO">Switching browser to browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:09.164012" level="INFO">Successfully changed active browser: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:09.164199" level="INFO">Reusing existing browser with id: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
+<msg time="2026-01-28T16:12:09.374016" level="INFO">Switching browser to browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:09.377162" level="INFO">Successfully changed active browser: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:09.377356" level="INFO">Reusing existing browser with id: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
 <arg>${browser}</arg>
 <arg>headless=False</arg>
 <arg>args=["--start-maximized"]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:09.158597" elapsed="0.005712"/>
+<status status="PASS" start="2026-01-28T16:12:09.373039" elapsed="0.004434"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-28T15:37:09.166893" level="INFO">{
+<msg time="2026-01-28T16:12:09.379856" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -167,124 +167,124 @@ menggunakan email yang valid</doc>
   "serviceWorkers": "allow",
   "viewport": null
 }</msg>
-<msg time="2026-01-28T15:37:09.179581" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-28T15:37:09.179871" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<msg time="2026-01-28T16:12:09.391624" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-28T16:12:09.391721" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
 <arg>viewport=${None}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:09.164611" elapsed="0.015527"/>
+<status status="PASS" start="2026-01-28T16:12:09.377794" elapsed="0.014006"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-28T15:37:10.042625" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
+<msg time="2026-01-28T16:12:10.904116" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
 <arg>${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-28T15:37:09.180438" elapsed="0.862522"/>
+<status status="PASS" start="2026-01-28T16:12:09.391986" elapsed="1.512638"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:10.183720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:11.133330" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.043392" elapsed="0.140620"/>
+<status status="PASS" start="2026-01-28T16:12:10.905046" elapsed="0.228740"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:09.157723" elapsed="1.026485"/>
+<status status="PASS" start="2026-01-28T16:12:09.372250" elapsed="1.761809"/>
 </kw>
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2026-01-28T15:37:10.186633" level="INFO">${data} = {'konfigurasiProduk': {'color': 'Red', 'size': 'M'}}</msg>
+<msg time="2026-01-28T16:12:11.138479" level="INFO">${data} = {'konfigurasiProduk': {'color': 'Red', 'size': 'M'}}</msg>
 <var>${data}</var>
 <arg>D:\\RND\\ROBOT\\tests/../Resources/DataFiles/konfigurasiProduk.json</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.185012" elapsed="0.001709"/>
+<status status="PASS" start="2026-01-28T16:12:11.136038" elapsed="0.002545"/>
 </kw>
 <kw name="Pilih Produk Pertama" owner="ProductPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:10.189077" level="INFO">Clicks the element '.product &gt;&gt; nth=1'.</msg>
+<msg time="2026-01-28T16:12:11.141092" level="INFO">Clicks the element '.product &gt;&gt; nth=1'.</msg>
 <arg>${PRODUCT_SELECTOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.188065" elapsed="0.571472"/>
+<status status="PASS" start="2026-01-28T16:12:11.139991" elapsed="0.179378"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:10.187393" elapsed="0.572405"/>
+<status status="PASS" start="2026-01-28T16:12:11.139341" elapsed="0.180611"/>
 </kw>
 <kw name="Konfigurasi Produk" owner="ProductPage">
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-01-28T15:37:10.763045" level="INFO">Selects the option(s) M by attribute SelectAttribute.label from element id=product-select-option-0.</msg>
+<msg time="2026-01-28T16:12:11.324589" level="INFO">Selects the option(s) M by attribute SelectAttribute.label from element id=product-select-option-0.</msg>
 <arg>${SIZE_DROPDOWN}</arg>
 <arg>label</arg>
 <arg>${size}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.762177" elapsed="0.193627"/>
+<status status="PASS" start="2026-01-28T16:12:11.323271" elapsed="0.145885"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-01-28T15:37:10.957510" level="INFO">Selects the option(s) Red by attribute SelectAttribute.label from element id=product-select-option-1.</msg>
+<msg time="2026-01-28T16:12:11.470774" level="INFO">Selects the option(s) Red by attribute SelectAttribute.label from element id=product-select-option-1.</msg>
 <arg>${COLOR_DROPDOWN}</arg>
 <arg>label</arg>
 <arg>${color}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.956251" elapsed="0.031977"/>
+<status status="PASS" start="2026-01-28T16:12:11.469542" elapsed="0.026331"/>
 </kw>
 <arg>${data['konfigurasiProduk']['size']}</arg>
 <arg>${data['konfigurasiProduk']['color']}</arg>
-<status status="PASS" start="2026-01-28T15:37:10.760641" elapsed="0.228007"/>
+<status status="PASS" start="2026-01-28T16:12:11.320943" elapsed="0.175206"/>
 </kw>
 <kw name="Tambahkan Ke Keranjang Dan Checkout" owner="ProductPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:10.991558" level="INFO">Clicks the element 'id=add'.</msg>
+<msg time="2026-01-28T16:12:11.499246" level="INFO">Clicks the element 'id=add'.</msg>
 <arg>${ADD_TO_CART_BTN}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:10.990572" elapsed="0.047342"/>
+<status status="PASS" start="2026-01-28T16:12:11.498010" elapsed="0.046340"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:11.039475" level="INFO">Clicks the element 'role=link[name="Check Out"]'.</msg>
+<msg time="2026-01-28T16:12:11.546030" level="INFO">Clicks the element 'role=link[name="Check Out"]'.</msg>
 <arg>${CHECKOUT_LINK}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:11.038286" elapsed="0.054322"/>
+<status status="PASS" start="2026-01-28T16:12:11.544813" elapsed="0.073123"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:10.989818" elapsed="0.103077"/>
+<status status="PASS" start="2026-01-28T16:12:11.497006" elapsed="0.121261"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:11.280365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:11.823223" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:11.093669" elapsed="0.187077"/>
+<status status="PASS" start="2026-01-28T16:12:11.619096" elapsed="0.204438"/>
 </kw>
-<msg time="2026-01-28T15:37:11.305985" level="INFO">Switching context to context=635ee0dd-5a63-409d-80bc-3ff60cf825dd in CURRENT</msg>
-<msg time="2026-01-28T15:37:11.319946" level="INFO">Successfully changed active context: context=635ee0dd-5a63-409d-80bc-3ff60cf825dd</msg>
-<msg time="2026-01-28T15:37:11.355247" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-28T15:37:09.153139" elapsed="2.128261"/>
+<msg time="2026-01-28T16:12:11.849381" level="INFO">Switching context to context=130f0379-bfcc-4d6d-ad2c-badf8a4b2c12 in CURRENT</msg>
+<msg time="2026-01-28T16:12:11.864371" level="INFO">Successfully changed active context: context=130f0379-bfcc-4d6d-ad2c-badf8a4b2c12</msg>
+<msg time="2026-01-28T16:12:11.902305" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-28T16:12:09.368611" elapsed="2.456262"/>
 </test>
 <doc>*Skenario Pembelian Produk*
 Test ini bertujuan untuk memastikan user dapat melakukan add to cart dan pembayaran</doc>
-<status status="PASS" start="2026-01-28T15:37:09.142486" elapsed="2.214036"/>
+<status status="PASS" start="2026-01-28T16:12:09.361835" elapsed="2.542010"/>
 </suite>
 <suite id="s1-s3" name="TC03-Login" source="D:\RND\ROBOT\tests\TC03-Login.robot">
 <test id="s1-s3-t1" name="TC03001 - User dapat melakukan login dengan akun yang terdaftar" line="11">
 <kw name="Visit Page" owner="Common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-28T15:37:11.379918" level="INFO">Switching browser to browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:11.382891" level="INFO">Successfully changed active browser: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:11.383049" level="INFO">Reusing existing browser with id: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
+<msg time="2026-01-28T16:12:11.927216" level="INFO">Switching browser to browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:11.930357" level="INFO">Successfully changed active browser: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:11.930552" level="INFO">Reusing existing browser with id: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
 <arg>${browser}</arg>
 <arg>headless=False</arg>
 <arg>args=["--start-maximized"]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:11.379130" elapsed="0.004093"/>
+<status status="PASS" start="2026-01-28T16:12:11.926442" elapsed="0.004218"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-28T15:37:11.385986" level="INFO">{
+<msg time="2026-01-28T16:12:11.933943" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -295,81 +295,81 @@ Test ini bertujuan untuk memastikan user dapat melakukan add to cart dan pembaya
   "serviceWorkers": "allow",
   "viewport": null
 }</msg>
-<msg time="2026-01-28T15:37:11.396712" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-28T15:37:11.396841" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<msg time="2026-01-28T16:12:11.946069" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-28T16:12:11.946160" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
 <arg>viewport=${None}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:11.383684" elapsed="0.013362"/>
+<status status="PASS" start="2026-01-28T16:12:11.931357" elapsed="0.014877"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-28T15:37:13.658006" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
+<msg time="2026-01-28T16:12:13.292382" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
 <arg>${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-28T15:37:11.397342" elapsed="2.261219"/>
+<status status="PASS" start="2026-01-28T16:12:11.946588" elapsed="1.346186"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:13.933856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:13.579588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:13.659405" elapsed="0.274852"/>
+<status status="PASS" start="2026-01-28T16:12:13.293171" elapsed="0.286706"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:11.378324" elapsed="2.556188"/>
+<status status="PASS" start="2026-01-28T16:12:11.925869" elapsed="1.654200"/>
 </kw>
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2026-01-28T15:37:13.937762" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
+<msg time="2026-01-28T16:12:13.582992" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
 <var>${data}</var>
 <arg>D:\\RND\\ROBOT\\tests/../Resources/DataFiles/users.json</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2026-01-28T15:37:13.935716" elapsed="0.002144"/>
+<status status="PASS" start="2026-01-28T16:12:13.581080" elapsed="0.002011"/>
 </kw>
 <kw name="Klik Tombol Login" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:13.940493" level="INFO">Clicks the element 'css=a:has-text("Log In")'.</msg>
+<msg time="2026-01-28T16:12:13.585589" level="INFO">Clicks the element 'css=a:has-text("Log In")'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:13.939378" elapsed="0.502593"/>
+<status status="PASS" start="2026-01-28T16:12:13.584463" elapsed="0.474491"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:13.938590" elapsed="0.503744"/>
+<status status="PASS" start="2026-01-28T16:12:13.583732" elapsed="0.475470"/>
 </kw>
 <kw name="Isi Form Login" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:14.447451" level="INFO">Fills the text 'arie@nugrohoarie.cloud' in the given field.</msg>
+<msg time="2026-01-28T16:12:14.067301" level="INFO">Fills the text 'arie@nugrohoarie.cloud' in the given field.</msg>
 <arg>${FIELD_EMAIL}</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.446202" elapsed="0.142781"/>
+<status status="PASS" start="2026-01-28T16:12:14.066093" elapsed="0.136213"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:14.590848" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
+<msg time="2026-01-28T16:12:14.204725" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
 <arg>${FIELD_PASSWORD}</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.589551" elapsed="0.036692"/>
+<status status="PASS" start="2026-01-28T16:12:14.202856" elapsed="0.023110"/>
 </kw>
 <arg>${data['user_pendaftaran']['email']}</arg>
 <arg>${data['user_pendaftaran']['password']}</arg>
-<status status="PASS" start="2026-01-28T15:37:14.443720" elapsed="0.182807"/>
+<status status="PASS" start="2026-01-28T16:12:14.063953" elapsed="0.162310"/>
 </kw>
 <kw name="Klik Tombol SignIn" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:14.631102" level="INFO">Clicks the element 'css=input[type="submit"][value="Sign In"]'.</msg>
+<msg time="2026-01-28T16:12:14.229027" level="INFO">Clicks the element 'css=input[type="submit"][value="Sign In"]'.</msg>
 <arg>${BTN_SIGNIN}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.630029" elapsed="0.048470"/>
+<status status="PASS" start="2026-01-28T16:12:14.228068" elapsed="0.058925"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:14.628667" elapsed="0.050191"/>
+<status status="PASS" start="2026-01-28T16:12:14.227277" elapsed="0.060118"/>
 </kw>
 <kw name="Get Url" owner="Browser">
 <arg>contains</arg>
@@ -378,35 +378,35 @@ Test ini bertujuan untuk memastikan user dapat melakukan add to cart dan pembaya
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.679805" elapsed="0.006441"/>
+<status status="PASS" start="2026-01-28T16:12:14.288140" elapsed="0.006464"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:14.851837" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:14.455200" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.687036" elapsed="0.165145"/>
+<status status="PASS" start="2026-01-28T16:12:14.295496" elapsed="0.159965"/>
 </kw>
-<msg time="2026-01-28T15:37:14.878504" level="INFO">Switching context to context=507aa615-1c1e-4441-b43c-7bd80c78bc7b in CURRENT</msg>
-<msg time="2026-01-28T15:37:14.893729" level="INFO">Successfully changed active context: context=507aa615-1c1e-4441-b43c-7bd80c78bc7b</msg>
-<msg time="2026-01-28T15:37:14.930664" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-28T15:37:11.374634" elapsed="3.478879"/>
+<msg time="2026-01-28T16:12:14.517575" level="INFO">Switching context to context=453edd81-f698-4f4d-b576-a426037b07b0 in CURRENT</msg>
+<msg time="2026-01-28T16:12:14.533456" level="INFO">Successfully changed active context: context=453edd81-f698-4f4d-b576-a426037b07b0</msg>
+<msg time="2026-01-28T16:12:14.587217" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-28T16:12:11.922212" elapsed="2.534219"/>
 </test>
 <test id="s1-s3-t2" name="TC03002 - User tidak dapat melakukan login dengan akun yang tidak terdaftar" line="22">
 <kw name="Visit Page" owner="Common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-28T15:37:14.937993" level="INFO">Switching browser to browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:14.941674" level="INFO">Successfully changed active browser: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
-<msg time="2026-01-28T15:37:14.941786" level="INFO">Reusing existing browser with id: browser=193461c6-be09-4309-9d21-fe4f2911caff</msg>
+<msg time="2026-01-28T16:12:14.591558" level="INFO">Switching browser to browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:14.593264" level="INFO">Successfully changed active browser: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
+<msg time="2026-01-28T16:12:14.593372" level="INFO">Reusing existing browser with id: browser=be05a7bd-fd04-41ad-8b8d-39f894d6a5d3</msg>
 <arg>${browser}</arg>
 <arg>headless=False</arg>
 <arg>args=["--start-maximized"]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.936879" elapsed="0.004975"/>
+<status status="PASS" start="2026-01-28T16:12:14.591011" elapsed="0.002447"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-28T15:37:14.944785" level="INFO">{
+<msg time="2026-01-28T16:12:14.595516" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -417,105 +417,105 @@ Test ini bertujuan untuk memastikan user dapat melakukan add to cart dan pembaya
   "serviceWorkers": "allow",
   "viewport": null
 }</msg>
-<msg time="2026-01-28T15:37:14.977311" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-28T15:37:14.977484" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<msg time="2026-01-28T16:12:14.628507" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-28T16:12:14.628663" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
 <arg>viewport=${None}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.942518" elapsed="0.035119"/>
+<status status="PASS" start="2026-01-28T16:12:14.593652" elapsed="0.035094"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-28T15:37:16.526828" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
+<msg time="2026-01-28T16:12:15.975064" level="INFO">Successfully initialized new page object and opened url: https://sauce-demo.myshopify.com/</msg>
 <arg>${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-28T15:37:14.978017" elapsed="1.549274"/>
+<status status="PASS" start="2026-01-28T16:12:14.628947" elapsed="1.346475"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:16.773468" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:16.200846" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:16.528073" elapsed="0.245709"/>
+<status status="PASS" start="2026-01-28T16:12:15.976007" elapsed="0.225142"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:14.936053" elapsed="1.837946"/>
+<status status="PASS" start="2026-01-28T16:12:14.590596" elapsed="1.610711"/>
 </kw>
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2026-01-28T15:37:16.777522" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
+<msg time="2026-01-28T16:12:16.202964" level="INFO">${data} = {'user_pendaftaran': {'first_name': 'Arie', 'last_name': 'Nugroho', 'email': 'arie@nugrohoarie.cloud', 'password': 'SecurePassword123!'}, 'login_not_valid': {'email': 'mukti@nugrohoarie.cloud', 'passw...</msg>
 <var>${data}</var>
 <arg>D:\\RND\\ROBOT\\tests/../Resources/DataFiles/users.json</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2026-01-28T15:37:16.775912" elapsed="0.001708"/>
+<status status="PASS" start="2026-01-28T16:12:16.201799" elapsed="0.001236"/>
 </kw>
 <kw name="Klik Tombol Login" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:16.780225" level="INFO">Clicks the element 'css=a:has-text("Log In")'.</msg>
+<msg time="2026-01-28T16:12:16.204698" level="INFO">Clicks the element 'css=a:has-text("Log In")'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:16.779167" elapsed="0.463853"/>
+<status status="PASS" start="2026-01-28T16:12:16.203789" elapsed="0.467739"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:16.778388" elapsed="0.464929"/>
+<status status="PASS" start="2026-01-28T16:12:16.203394" elapsed="0.468323"/>
 </kw>
 <kw name="Isi Form Login" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:17.246964" level="INFO">Fills the text 'mukti@nugrohoarie.cloud' in the given field.</msg>
+<msg time="2026-01-28T16:12:16.674932" level="INFO">Fills the text 'mukti@nugrohoarie.cloud' in the given field.</msg>
 <arg>${FIELD_EMAIL}</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:17.246232" elapsed="0.106023"/>
+<status status="PASS" start="2026-01-28T16:12:16.673836" elapsed="0.149021"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-28T15:37:17.353931" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
+<msg time="2026-01-28T16:12:16.824700" level="INFO">Fills the text 'SecurePassword123!' in the given field.</msg>
 <arg>${FIELD_PASSWORD}</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:17.352647" elapsed="0.030850"/>
+<status status="PASS" start="2026-01-28T16:12:16.823406" elapsed="0.028564"/>
 </kw>
 <arg>${data['login_not_valid']['email']}</arg>
 <arg>${data['login_not_valid']['password']}</arg>
-<status status="PASS" start="2026-01-28T15:37:17.244516" elapsed="0.139274"/>
+<status status="PASS" start="2026-01-28T16:12:16.672396" elapsed="0.179793"/>
 </kw>
 <kw name="Klik Tombol SignIn" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2026-01-28T15:37:17.386666" level="INFO">Clicks the element 'css=input[type="submit"][value="Sign In"]'.</msg>
+<msg time="2026-01-28T16:12:16.854753" level="INFO">Clicks the element 'css=input[type="submit"][value="Sign In"]'.</msg>
 <arg>${BTN_SIGNIN}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-28T15:37:17.385580" elapsed="0.056372"/>
+<status status="PASS" start="2026-01-28T16:12:16.853713" elapsed="0.045686"/>
 </kw>
-<status status="PASS" start="2026-01-28T15:37:17.384707" elapsed="0.057613"/>
+<status status="PASS" start="2026-01-28T16:12:16.852994" elapsed="0.046751"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${ERROR_MESSAGE}</arg>
 <arg>'Incorrect email or password.'</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-01-28T15:37:17.443116" elapsed="0.001658"/>
+<status status="PASS" start="2026-01-28T16:12:16.900551" elapsed="0.002034"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-28T15:37:17.580788" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-28T16:12:17.046688" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-28T15:37:17.445480" elapsed="0.135628"/>
+<status status="PASS" start="2026-01-28T16:12:16.903252" elapsed="0.143732"/>
 </kw>
-<msg time="2026-01-28T15:37:17.608107" level="INFO">Switching context to context=9bcb9264-054c-420b-b148-33f932fa9f39 in CURRENT</msg>
-<msg time="2026-01-28T15:37:17.623760" level="INFO">Successfully changed active context: context=9bcb9264-054c-420b-b148-33f932fa9f39</msg>
-<msg time="2026-01-28T15:37:17.664514" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-28T15:37:14.932029" elapsed="2.649704"/>
+<msg time="2026-01-28T16:12:17.076936" level="INFO">Switching context to context=05f646fb-e264-4556-817a-a4d602b9358e in CURRENT</msg>
+<msg time="2026-01-28T16:12:17.088782" level="INFO">Successfully changed active context: context=05f646fb-e264-4556-817a-a4d602b9358e</msg>
+<msg time="2026-01-28T16:12:17.149592" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-28T16:12:14.588260" elapsed="2.459277"/>
 </test>
 <doc>*Skenario Login*
 Test ini bertujuan untuk memastikan user baru dapat mendaftar
 menggunakan email terdaftar dan tidak bisa login menggunakan user yang tidak terdaftar</doc>
-<status status="PASS" start="2026-01-28T15:37:11.363299" elapsed="6.302836"/>
+<status status="PASS" start="2026-01-28T16:12:11.911242" elapsed="5.240354"/>
 </suite>
-<status status="PASS" start="2026-01-28T15:37:03.574279" elapsed="14.099565"/>
+<status status="PASS" start="2026-01-28T16:11:59.063432" elapsed="18.094446"/>
 </suite>
 <statistics>
 <total>

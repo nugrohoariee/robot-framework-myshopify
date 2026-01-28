@@ -13,7 +13,7 @@ TC01001 - User dapat melakukan daftar akun
     ${data}    Load Json From File    ${CURDIR}/../Resources/DataFiles/users.json
     
     Klik Tombol SIgnUp
-    Isi Form Pendaftaran    
+    Isi Form Pendaftaran   
     ...    ${data['user_pendaftaran']['first_name']}
     ...    ${data['user_pendaftaran']['last_name']}
     ...    ${data['user_pendaftaran']['email']}
