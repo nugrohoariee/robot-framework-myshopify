@@ -9,8 +9,8 @@ Berikut adalah konsep dan teknik utama yang telah diterapkan dalam project ini:
 
 ### 1. Page Object Model (POM) Design Pattern
 Kamu telah memisahkan logic pengujian dengan detail elemen halaman.
-*   **Test Case Logic**: Berada di `tests/TC01-SignUp.robot`.
-*   **Page Objects**: Berada di `Resources/POM/SignUpPage.robot`.
+*   **Test Case Logic**: Berada di folder `tests/` yang kini mencakup `TC01-SignUp.robot`, `TC02-PembelianProduk.robot`, dan `TC03-Login.robot`.
+*   **Page Objects**: Berada di `Resources/POM/` (`SignUpPage.robot`, `LoginPage.robot`, `ProductPage.robot`).
 *   **Manfaat**: Jika ada perubahan pada locator elemen di website, kamu hanya perlu mengubah satu file di direktori POM tanpa perlu menyentuh file Test Case.
 
 ### 2. Robot Framework Structure & Best Practices
@@ -39,6 +39,16 @@ Penerapan prinsip **Don't Repeat Yourself (DRY)** terlihat pada file `Resources/
 Penggunaan argumen pada custom keyword menambah fleksibilitas.
 *   Contoh: `Isi Form Pendaftaran` menerima parameter `${first_name}`, `${last_name}`, dll.
 *   Ini memungkinkan keyword yang sama digunakan untuk mendaftarkan user yang berbeda-beda.
+
+### 7. Handling Dropdowns & Complex Selectors
+Implementasi di `TC02-PembelianProduk.robot` menunjukkan kemampuan berinteraksi dengan elemen dropdown dan selektor tingkat lanjut:
+*   **Dropdown**: Menggunakan `Select Options By    [Locator]    label    [Value]` untuk memilih size dan color.
+*   **Chained Selectors**: Menggunakan syntax `>>` untuk selektor yang lebih spesifik, contoh: `.product >> nth=1` (memilih produk kedua dalam list).
+
+### 8. Negative Testing & Validasi
+Di `TC03-Login.robot`, pengujian tidak hanya untuk *happy path* (login sukses) tapi juga *negative path* (login gagal):
+*   **Validasi URL**: Menggunakan `Get Url    contains    /account` untuk memverifikasi redirect sukses.
+*   **Validasi Error**: Memastikan pesan error muncul untuk kredensial yang salah.
 
 ## Rekomendasi Pengembangan (Next Steps)
 
@@ -71,4 +81,11 @@ Berikut adalah daftar tools dan library yang terinstall pada project ini:
 ### Instruksi Instalasi
 File `requirements.txt` telah dibuat untuk memudahkan instalasi semua dependencies di atas.
 Command: `pip install -r requirements.txt`
+
+## Versioning History
+
+| Version | Date       | Author | Changes |
+|---------|------------|--------|---------|
+| 1.0     | 2026-01-28 | User   | Initial Analysis (TC01) |
+| 1.1     | 2026-01-28 | Assistant | Added Analysis for TC02 (Purchase) & TC03 (Login), including dropdowns, chained selectors, and negative testing. |
 

@@ -1,12 +1,14 @@
-
 *** Settings ***
 Resource    ../Resources/Common.robot
 Resource    ../Resources/POM/LoginPage.robot
 Resource    ../Resources/POM/SignUpPage.robot
 Test Setup    Visit Page
+Documentation    *Skenario Login*
+...              Test ini bertujuan untuk memastikan user baru dapat mendaftar 
+...              menggunakan email terdaftar dan tidak bisa login menggunakan user yang tidak terdaftar
 
 *** Test Cases ***
-User dapat melakukan login dengan akun yang terdaftar
+TC03001 - User dapat melakukan login dengan akun yang terdaftar
     ${data}    Load Json From File    ${CURDIR}/../Resources/DataFiles/users.json
     
     Klik Tombol Login
@@ -17,7 +19,7 @@ User dapat melakukan login dengan akun yang terdaftar
     Get Url    contains    /account
     Take Screenshot
 
-User tidak dapat melakukan login dengan akun yang tidak terdaftar
+TC03002 - User tidak dapat melakukan login dengan akun yang tidak terdaftar
     ${data}    Load Json From File    ${CURDIR}/../Resources/DataFiles/users.json
     
     Klik Tombol Login

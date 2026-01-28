@@ -4,9 +4,12 @@ Resource    ../Resources/POM/ProductPage.robot
 Resource    ../Resources/Common.robot
 Resource    ../Resources/POM/SignUpPage.robot
 Test Setup    Visit Page
+Documentation    *Skenario Sign Up*
+...              Test ini bertujuan untuk memastikan user baru dapat mendaftar 
+...              menggunakan email yang valid
 
 *** Test Cases ***
-User dapat melakukan daftar akun
+TC01001 - User dapat melakukan daftar akun
     ${data}    Load Json From File    ${CURDIR}/../Resources/DataFiles/users.json
     
     Klik Tombol SIgnUp
