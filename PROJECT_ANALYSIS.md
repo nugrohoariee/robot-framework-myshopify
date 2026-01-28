@@ -51,3 +51,24 @@ Penggunaan argumen pada custom keyword menambah fleksibilitas.
     *   Gunakan fitur `[Tags]` pada Test Cases.
     *   Contoh: `[Tags] smoke` atau `[Tags] regression`.
     *   Ini memudahkan eksekusi parsial suite test (misal: hanya menjalankan basic functionality).
+
+## Tools & Libraries
+
+Berikut adalah daftar tools dan library yang terinstall pada project ini:
+
+### Core Frameworks
+*   **Robot Framework (v7.4.1)**: Core automation framework.
+*   **Robot Framework Browser (v19.12.3)**: Library utama untuk web automation berbasis Playwright.
+*   **Robot Framework JSONLibrary (v0.5)**: Library untuk memanipulasi data JSON.
+*   **Allure Robot Framework (v2.15.3)**: Library untuk integrasi reporting dengan Allure.
+
+### Dependencies Lainnya
+*   **grpcio**: Digunakan oleh Browser library untuk komunikasi dengan Playwright node process.
+*   **protobuf**: Dependencies untuk serialisasi data.
+*   **jsonschema**: Validasi struktur JSON.
+*   **PyYAML**: Parsing konfigurasi YAML (kemungkinan digunakan oleh Allure atau tools lain).
+
+### Instruksi Instalasi
+File `requirements.txt` telah dibuat untuk memudahkan instalasi semua dependencies di atas.
+Command: `pip install -r requirements.txt`
+
