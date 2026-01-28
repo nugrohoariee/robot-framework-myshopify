@@ -6,6 +6,7 @@ ${BTN_LOGIN}           css=a:has-text("Log In")
 ${FIELD_EMAIL}         id=customer_email
 ${FIELD_PASSWORD}      id=customer_password
 ${BTN_SIGNIN}          css=input[type="submit"][value="Sign In"]
+${PESAN_ERROR}         xpath=//li[normalize-space()='Incorrect email or password.']
 
 
 *** Keywords ***

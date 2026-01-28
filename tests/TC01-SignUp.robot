@@ -18,6 +18,3 @@ User dapat melakukan daftar akun
     Klik Tombol Create Account
     Take Screenshot
 
-
-
-

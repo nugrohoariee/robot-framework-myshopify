@@ -4,5 +4,9 @@
         "last_name": "Nugroho",
         "email": "arie@nugrohoarie.cloud",
         "password": "SecurePassword123!"
+    },
+    "login_not_valid": {
+        "email": "mukti@nugrohoarie.cloud",
+        "password": "SecurePassword123!"
     }
 }
