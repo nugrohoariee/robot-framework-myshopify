@@ -8,7 +8,6 @@ ${FIELD_LAST_NAME}     xpath=//input[@id='last_name']
 ${FIELD_ID}            xpath=//input[@id='email']
 ${FIELD_PASSWORD}      xpath=//input[@id='password']
 ${BTN_CREATE}          xpath=//form/div[6]/input
-${BTN_MY_ACCOUNT}      css=a:has-text("My Account")
 
 *** Keywords ***
 Klik Tombol SIgnUp
@@ -23,4 +22,5 @@ Isi Form Pendaftaran
 
 Klik Tombol Create Account
     Click    ${BTN_CREATE}
+  
 
